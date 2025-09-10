@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Next.js E-commerce Test with Stripe
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
+[![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com/)  
+[![Zustand](https://img.shields.io/badge/Zustand-443d2f?style=for-the-badge&logo=react&logoColor=white)](https://github.com/pmndrs/zustand)  
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)  
+[![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=radix-ui&logoColor=white)](https://ui.shadcn.com/)
 
-First, run the development server:
+---
 
+## English 🇬🇧
+
+### Project Overview
+This repository contains a **test/demo e-commerce application** built with **Next.js** and **TypeScript**, integrating **Stripe** for payments. It demonstrates a simple product catalog, cart management using **Zustand**, and a Stripe-powered checkout flow. UI is styled with **Tailwind CSS** and **shadcn/ui** components.
+
+### Tech Stack
+- Next.js (React)
+- TypeScript
+- Zustand (state management)
+- Stripe (payments)
+- Tailwind CSS
+- shadcn/ui
+
+### Features
+- Product listing (mock/sample data)
+- Add / remove items in cart (Zustand)
+- Checkout using Stripe (client + server integration)
+- Responsive layout with Tailwind + shadcn/ui
+- Demo/test only — not hardened for production
+
+### Getting Started (Development)
 ```bash
+# Clone
+git clone https://github.com/gerespinosa/ecom-test.git
+cd ecom-test
+
+# Install dependencies
+npm install
+
+# Create env file
+# .env.local
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
+STRIPE_SECRET_KEY=your_secret_key
+# (other env vars if your app requires them)
+
+# Run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 🛍️ E-commerce de prueba con Next.js y Stripe
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
+[![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com/)  
+[![Zustand](https://img.shields.io/badge/Zustand-443d2f?style=for-the-badge&logo=react&logoColor=white)](https://github.com/pmndrs/zustand)  
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)  
+[![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=radix-ui&logoColor=white)](https://ui.shadcn.com/)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📖 Descripción del proyecto
+Este repositorio contiene una **aplicación de comercio electrónico de prueba** desarrollada con **Next.js** y **TypeScript**, que integra **Stripe** para procesar pagos.  
+El objetivo es mostrar un flujo básico de catálogo → carrito → checkout, usando **Zustand** para la gestión de estado y **Tailwind CSS + shadcn/ui** para el diseño de la interfaz.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Tecnologías principales
+- **Next.js** – Framework de React con renderizado del lado del servidor y enrutamiento
+- **TypeScript** – JavaScript tipado
+- **Zustand** – Gestión de estado ligera
+- **Stripe** – Pasarela de pagos
+- **Tailwind CSS** – Framework CSS basado en utilidades
+- **shadcn/ui** – Componentes accesibles y personalizables
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚙️ Funcionalidades
+- Listado de productos (ejemplo/mock)
+- Añadir y eliminar productos del carrito
+- Checkout con Stripe (integración cliente + servidor)
+- Diseño responsive y moderno con Tailwind + shadcn/ui
+- Proyecto de **demostración** (no listo para producción)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📦 Instalación y configuración
+1. Clonar el repositorio:  
+   ```bash
+   git clone https://github.com/gerespinosa/ecom-test.git
+   cd ecom-test
